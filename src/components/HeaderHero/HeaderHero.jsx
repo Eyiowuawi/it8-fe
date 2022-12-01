@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './HeaderHero.module.css';
 import heroImage from '../../assets/hero_img.png';
 import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
 const HeaderHero = () => {
   return (
     <div className={classes.heroContainer}>
@@ -9,13 +10,12 @@ const HeaderHero = () => {
         <div className={classes.leftDiv}>
           <h1>Start your tech journey without delay with us</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-            fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-            vitae mattis tellus. Nullam quis imperdiet augue.
+          Sign up now to begin to access quality tech training at an affordable rate.
           </p>
           <div className={classes.btn}>
-            <Button>Enroll Now</Button>
+          <Link to="/signup">
+            <Button>Enrol Now</Button>
+            </Link>
           </div>
         </div>
         <div className={classes.rightDiv}>
